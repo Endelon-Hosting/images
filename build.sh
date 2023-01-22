@@ -1,6 +1,9 @@
 #! /bin/bash
 echo "Building docker images"
 
+# Dotnet
+./docker-build.sh runtimes/dotnet/6.0 endelonhosting/images dotnet6_0
+
 # Minecraft
 ./docker-build.sh minecraft/17/ endelonhosting/images minecraft17
 ./docker-build.sh minecraft/16/ endelonhosting/images minecraft16
@@ -20,6 +23,3 @@ echo "Building docker images"
 ./docker-build.sh runtimes/python/3.8/ endelonhosting/images python3_8
 ./docker-build.sh runtimes/python/3.9/ endelonhosting/images python3_9
 ./docker-build.sh runtimes/python/3.10/ endelonhosting/images python3_10
-
-# Dotnet
-./docker-build.sh runtimes/dotnet/6.0 endelonhosting/images dotnet6_0
