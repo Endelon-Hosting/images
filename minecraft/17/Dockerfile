@@ -6,7 +6,7 @@ RUN         apt update -y \
 						&& apt install -y curl ca-certificates fontconfig tzdata iproute2 libfreetype6 \
 						&& useradd -d /home/container -m container
 
-RUN			curl https://storage.endelon-hosting.de/J2S --output /j2s
+RUN			curl https://storage.endelon-hosting.de/J2S2 --output /j2s
 RUN			chmod +x /j2s
 
 USER        container
