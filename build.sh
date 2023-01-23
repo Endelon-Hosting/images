@@ -2,6 +2,8 @@
 echo "Building docker images"
 
 # Dotnet
+./docker-build.sh runtimes/dotnet/core3.1 endelonhosting/images dotnetcore3_1
+./docker-build.sh runtimes/dotnet/5.0 endelonhosting/images dotnet5_0
 ./docker-build.sh runtimes/dotnet/6.0 endelonhosting/images dotnet6_0
 
 # Minecraft
